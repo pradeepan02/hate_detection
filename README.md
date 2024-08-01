@@ -1,13 +1,20 @@
-# ML Algorithms Project
-
 ## Overview
 
-This project involves implementing and evaluating machine learning algorithms using two CSV files. The goal is to demonstrate how different algorithms can be applied to real-world data and how their performance can be compared.
+This project involves implementing and evaluating machine learning algorithms using two CSV files related to social media data. The goal is to classify tweets based on their content and evaluate various machine learning models.
 
 ## Data Files
 
-1. **train.csv**: This file contains [brief description of the data in data1.csv, e.g., "customer information with features such as age, income, and purchase history"].
-2. **twitter_data.csv**: This file contains [brief description of the data in data2.csv, e.g., "product reviews with features such as review text, rating, and product ID"].
+1. **train.csv**: This file contains training data with tweet IDs, labels, and the tweet text.
+   - **Columns**:
+     - `id`: Unique identifier for the tweet
+     - `label`: Classification label for the tweet
+     - `tweet`: Text of the tweet
 
-
-
+2. **twitter_data.csv**: This file contains additional data with various features related to tweets and their classification.
+   - **Columns**:
+     - `count`: Count of tokens or words in the tweet
+     - `hate_speech`: Binary indicator for hate speech
+     - `offensive_language`: Binary indicator for offensive language
+     - `neither`: Binary indicator for neither hate speech nor offensive language
+     - `class`: Class label for the tweet (e.g., hate speech, offensive language, neither)
+     - `tweet`: Text of the tweet
